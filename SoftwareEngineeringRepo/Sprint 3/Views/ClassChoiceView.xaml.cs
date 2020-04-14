@@ -18,9 +18,9 @@ namespace Dungeons_DragonsCharacterBuilder.Views
     /// <summary>
     /// Interaction logic for RaceChoiceView.xaml
     /// </summary>
-    public partial class RaceChoiceView : UserControl
+    public partial class ClassChoiceView : UserControl
     {
-        public RaceChoiceView()
+        public ClassChoiceView()
         {
             InitializeComponent();
         }

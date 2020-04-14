@@ -1,78 +1,100 @@
-﻿<UserControl x:Class="Dungeons_DragonsCharacterBuilder.Views.RaceChoiceView"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Dungeons_DragonsCharacterBuilder.Views"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+﻿<UserControl
+    x:Class="Dungeons_DragonsCharacterBuilder.Views.RaceChoiceView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Dungeons_DragonsCharacterBuilder.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+
+    <!--  Top-Level Grid  -->
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="3.5*"/>
-        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+
+        <!--  Race Choice Window  -->
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="3.5*" />
+            </Grid.ColumnDefinitions>
 
 
-       <!--Column One, Row One-->
-        <ScrollViewer Grid.Column="0">
-            <StackPanel>
-                <Button Content="Dwarf"
-                        FontSize="20">
-                </Button>
+            <!--  Column One, Row One  -->
+            <ScrollViewer Grid.Column="0">
+                <StackPanel>
+                    <Button Content="Dwarf" FontSize="20" />
 
-                <Button Content="Elf"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Elf" FontSize="20" />
 
-                <Button Content="Halfling"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Halfling" FontSize="20" />
 
-                <Button Content="Human"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Human" FontSize="20" />
 
-                <Button Content="Dragonborn"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Dragonborn" FontSize="20" />
 
-                <Button Content="Gnome"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Gnome" FontSize="20" />
 
-                <Button Content="Half-Elf"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Half-Elf" FontSize="20" />
 
-                <Button Content="Half-Orc"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Half-Orc" FontSize="20" />
 
-                <Button Content="Tiefling"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Tiefling" FontSize="20" />
+
+                </StackPanel>
+            </ScrollViewer>
+
+
+            <!--  Column Two, Row One  -->
+            <StackPanel Grid.Column="1">
+                <Label
+                    x:Name="RaceName"
+                    HorizontalAlignment="Center"
+                    Content="Choose Your Race"
+                    FontSize="28" />
+
+                <Label
+                    x:Name="RaceDescription"
+                    Margin="10,10,10,0"
+                    Content="Race Description"
+                    FontSize="16" />
+
+                <Label
+                    x:Name="RaceStats"
+                    Margin="10,10,10,0"
+                    Content="Stat Bonus: +2 Strength, -2 Wisdom"
+                    FontSize="16" />
 
             </StackPanel>
-        </ScrollViewer>
-        
-        
-        <!--Column Two, Row One-->
-        <StackPanel Grid.Column="1">
-            <Label x:Name="RaceName" 
-                   Content="Choose Your Race"
-                   FontSize="28"
-                   HorizontalAlignment="Center"/>
+        </Grid>
 
-            <Label x:Name="RaceDescription" 
-                   Margin="10 10 10 0"
-                   FontSize="16"
-                   Content="Race Description"/>
 
-            <Label x:Name="RaceStats"
-                   Margin="10 10 10 0"
-                   FontSize="16"
-                   Content="Stat Bonus: +2 Strength, -2 Wisdom"/>
+        <!--  Navigation Buttons  -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
-        </StackPanel>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
+
+            <!--  Column One  -->
+            <Button Grid.Column="0">
+                <TextBlock Text="Previous" />
+            </Button>
+
+            <!--  Column Two  -->
+            <Button Grid.Column="1">
+                <TextBlock Text="Next" />
+            </Button>
+        </Grid>
     </Grid>
+
 </UserControl>

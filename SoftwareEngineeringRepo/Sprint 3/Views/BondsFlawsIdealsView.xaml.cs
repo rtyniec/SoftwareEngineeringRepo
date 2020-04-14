@@ -18,9 +18,9 @@ namespace Dungeons_DragonsCharacterBuilder.Views
     /// <summary>
     /// Interaction logic for TitleScreenView.xaml
     /// </summary>
-    public partial class TitleScreenView : UserControl
+    public partial class BondsFlawsIdealsView : UserControl
     {
-        public TitleScreenView()
+        public BondsFlawsIdealsView()
         {
             InitializeComponent();
         }

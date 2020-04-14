@@ -1,90 +1,104 @@
-﻿<UserControl x:Class="Dungeons_DragonsCharacterBuilder.Views.RaceChoiceView"
-             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
-             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
-             xmlns:local="clr-namespace:Dungeons_DragonsCharacterBuilder.Views"
-             mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
+﻿<UserControl
+    x:Class="Dungeons_DragonsCharacterBuilder.Views.ClassChoiceView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Dungeons_DragonsCharacterBuilder.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    d:DesignHeight="450"
+    d:DesignWidth="800"
+    mc:Ignorable="d">
+
+    <!--  Top-Level Grid  -->
     <Grid>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"/>
-            <ColumnDefinition Width="3.5*"/>
-        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
 
-        <!--Column One, Row One-->
-        <ScrollViewer Grid.Column="0">
-            <StackPanel >
-                <Button Content="Barbarian"
-                        FontSize="20">
-                </Button>
+        <!--  Class Selection Menu  -->
+        <Grid Grid.Row="0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="3.5*" />
+            </Grid.ColumnDefinitions>
 
-                <Button Content="Bard"
-                        FontSize="20">
-                </Button>
+            <!--  Column One, Row One  -->
+            <ScrollViewer Grid.Column="0">
+                <StackPanel>
+                    <Button Content="Barbarian" FontSize="20" />
 
-                <Button Content="Cleric"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Bard" FontSize="20" />
 
-                <Button Content="Druid"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Cleric" FontSize="20" />
 
-                <Button Content="Fighter"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Druid" FontSize="20" />
 
-                <Button Content="Monk"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Fighter" FontSize="20" />
 
-                <Button Content="Paladin"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Monk" FontSize="20" />
 
-                <Button Content="Ranger"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Paladin" FontSize="20" />
 
-                <Button Content="Rogue"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Ranger" FontSize="20" />
 
-                <Button Content="Sorcerer"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Rogue" FontSize="20" />
 
-                <Button Content="Warlock"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Sorcerer" FontSize="20" />
 
-                <Button Content="Wizard"
-                        FontSize="20">
-                </Button>
+                    <Button Content="Warlock" FontSize="20" />
+
+                    <Button Content="Wizard" FontSize="20" />
+
+                </StackPanel>
+            </ScrollViewer>
+
+
+            <!--  Column Two, Row One  -->
+            <StackPanel Grid.Row="0" Grid.Column="1">
+                <Label
+                    x:Name="ClassName"
+                    HorizontalAlignment="Center"
+                    Content="Choose Your Class"
+                    FontSize="28" />
+
+                <Label
+                    x:Name="ClassDescription"
+                    Margin="10,10,10,0"
+                    Content="Class Description"
+                    FontSize="16" />
+
+                <Label
+                    x:Name="MainMechanic"
+                    Margin="10,10,10,0"
+                    Content="Main Mechanic"
+                    FontSize="16" />
 
             </StackPanel>
-        </ScrollViewer>
-        
-        
-        <!--Column Two, Row One-->
-        <StackPanel Grid.Column="1"
-                    Grid.Row="0">
-            <Label x:Name="ClassName" 
-                   Content="Choose Your Class"
-                   FontSize="28"
-                   HorizontalAlignment="Center"/>
+        </Grid>
 
-            <Label x:Name="ClassDescription" 
-                   Margin="10 10 10 0"
-                   FontSize="16"
-                   Content="Class Description"/>
+        <!--  Navigation Buttons  -->
+        <Grid Grid.Row="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
 
-            <Label x:Name="MainMechanic"
-                   Margin="10 10 10 0"
-                   FontSize="16"
-                   Content="Main Mechanic"/>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50" />
+            </Grid.RowDefinitions>
 
-        </StackPanel>
+            <!--  Column One  -->
+            <Button Grid.Column="0">
+                <TextBlock Text="Previous" />
+            </Button>
+
+            <!--  Column Two  -->
+            <Button Grid.Column="1">
+                <TextBlock Text="Next" />
+            </Button>
+        </Grid>
     </Grid>
+
 </UserControl>

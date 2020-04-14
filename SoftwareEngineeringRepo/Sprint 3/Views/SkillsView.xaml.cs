@@ -18,11 +18,12 @@ namespace Dungeons_DragonsCharacterBuilder.Views
     /// <summary>
     /// Interaction logic for RaceChoiceView.xaml
     /// </summary>
-    public partial class AbilityScoreView : UserControl
+    public partial class SkillsView : UserControl
     {
-        public AbilityScoreView()
+        public SkillsView()
         {
             InitializeComponent();
         }
+
     }
 }
