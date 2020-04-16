@@ -18,7 +18,10 @@
         </Grid.RowDefinitions>
 
         <!--  Race Choice Window  -->
-        <Grid Grid.Row="0">
+        <Grid
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Margin="0,0,0,5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="3.5*" />
@@ -26,28 +29,26 @@
 
 
             <!--  Column One, Row One  -->
-            <ScrollViewer Grid.Column="0">
-                <StackPanel>
-                    <Button Content="Dwarf" FontSize="20" />
+            <UniformGrid Grid.Column="0" Columns="1">
+                <Button Content="Dwarf" FontSize="20" />
 
-                    <Button Content="Elf" FontSize="20" />
+                <Button Content="Elf" FontSize="20" />
 
-                    <Button Content="Halfling" FontSize="20" />
+                <Button Content="Halfling" FontSize="20" />
 
-                    <Button Content="Human" FontSize="20" />
+                <Button Content="Human" FontSize="20" />
 
-                    <Button Content="Dragonborn" FontSize="20" />
+                <Button Content="Dragonborn" FontSize="20" />
 
-                    <Button Content="Gnome" FontSize="20" />
+                <Button Content="Gnome" FontSize="20" />
 
-                    <Button Content="Half-Elf" FontSize="20" />
+                <Button Content="Half-Elf" FontSize="20" />
 
-                    <Button Content="Half-Orc" FontSize="20" />
+                <Button Content="Half-Orc" FontSize="20" />
 
-                    <Button Content="Tiefling" FontSize="20" />
+                <Button Content="Tiefling" FontSize="20" />
 
-                </StackPanel>
-            </ScrollViewer>
+            </UniformGrid>
 
 
             <!--  Column Two, Row One  -->

@@ -1,12 +1,13 @@
-﻿<Window x:Class="Dungeons_DragonsCharacterBuilder.Views.ShellView"
-        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        xmlns:local="clr-namespace:Dungeons_DragonsCharacterBuilder.Views"
-        mc:Ignorable="d"
-        Title="ShellView" Height="450" Width="800">
-    <ContentControl x:Name="ActiveItem">
-
-    </ContentControl>
+﻿<Window
+    x:Class="Dungeons_DragonsCharacterBuilder.Views.ShellView"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:Dungeons_DragonsCharacterBuilder.Views"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    Title="ShellView"
+    Width="850"
+    Height="500"
+    mc:Ignorable="d">
+    <ContentControl x:Name="ActiveItem" />
 </Window>

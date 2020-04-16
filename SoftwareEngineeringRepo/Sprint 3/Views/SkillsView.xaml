@@ -28,7 +28,11 @@
         </StackPanel>
 
         <!--  Skills  -->
-        <UniformGrid Grid.Row="2" Columns="2">
+        <UniformGrid
+            Grid.Row="1"
+            Grid.RowSpan="3"
+            Margin="0,10"
+            Columns="2">
 
             <!--  Skill List  -->
             <UniformGrid

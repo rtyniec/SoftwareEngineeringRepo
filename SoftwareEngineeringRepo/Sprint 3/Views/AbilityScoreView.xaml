@@ -21,13 +21,17 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
 
-        <!--  Header  -->
+        <!--
+            Header
+            AbilityScoreName Linked to Attribute
+            AbilityScoreDescription Linked to Attribute
+        -->
         <StackPanel Grid.Row="0">
             <TextBlock
                 x:Name="AbilityScoreName"
                 HorizontalAlignment="Center"
                 FontSize="28" />
- 
+
             <TextBlock
                 x:Name="AbilityScoreDescription"
                 HorizontalAlignment="Center"

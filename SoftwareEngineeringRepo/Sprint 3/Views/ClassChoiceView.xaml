@@ -18,41 +18,41 @@
         </Grid.RowDefinitions>
 
         <!--  Class Selection Menu  -->
-        <Grid Grid.Row="0">
+        <Grid
+            Grid.Row="0"
+            Grid.RowSpan="2"
+            Margin="0,0,0,5">
             <Grid.ColumnDefinitions>
                 <ColumnDefinition Width="*" />
                 <ColumnDefinition Width="3.5*" />
             </Grid.ColumnDefinitions>
 
             <!--  Column One, Row One  -->
-            <ScrollViewer Grid.Column="0">
-                <StackPanel>
-                    <Button Content="Barbarian" FontSize="20" />
+            <UniformGrid Grid.Column="0" Columns="1">
+                <Button Content="Barbarian" FontSize="20" />
 
-                    <Button Content="Bard" FontSize="20" />
+                <Button Content="Bard" FontSize="20" />
 
-                    <Button Content="Cleric" FontSize="20" />
+                <Button Content="Cleric" FontSize="20" />
 
-                    <Button Content="Druid" FontSize="20" />
+                <Button Content="Druid" FontSize="20" />
 
-                    <Button Content="Fighter" FontSize="20" />
+                <Button Content="Fighter" FontSize="20" />
 
-                    <Button Content="Monk" FontSize="20" />
+                <Button Content="Monk" FontSize="20" />
 
-                    <Button Content="Paladin" FontSize="20" />
+                <Button Content="Paladin" FontSize="20" />
 
-                    <Button Content="Ranger" FontSize="20" />
+                <Button Content="Ranger" FontSize="20" />
 
-                    <Button Content="Rogue" FontSize="20" />
+                <Button Content="Rogue" FontSize="20" />
 
-                    <Button Content="Sorcerer" FontSize="20" />
+                <Button Content="Sorcerer" FontSize="20" />
 
-                    <Button Content="Warlock" FontSize="20" />
+                <Button Content="Warlock" FontSize="20" />
 
-                    <Button Content="Wizard" FontSize="20" />
-
-                </StackPanel>
-            </ScrollViewer>
+                <Button Content="Wizard" FontSize="20" />
+            </UniformGrid>
 
 
             <!--  Column Two, Row One  -->

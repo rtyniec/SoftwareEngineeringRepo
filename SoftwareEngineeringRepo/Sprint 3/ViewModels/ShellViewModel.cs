@@ -16,7 +16,7 @@ namespace Dungeons_DragonsCharacterBuilder.ViewModels
         
         public void LoadTitleScreen()
         {
-            ActivateItem(new AbilityScoreViewModel());
+            ActivateItem(new BondsFlawsIdealsViewModel());
         }
     }
 }
